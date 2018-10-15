@@ -1,0 +1,298 @@
+EESchema Schematic File Version 4
+LIBS:Light Sensor with TH-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LMC6482 U1
+U 1 1 5B89AB17
+P 5400 3500
+F 0 "U1" H 5400 3133 50  0000 C CNN
+F 1 "LMC6482" H 5400 3224 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5400 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 5400 3500 50  0001 C CNN
+	1    5400 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LMC6482 U1
+U 2 1 5B89AC33
+P 6700 3600
+F 0 "U1" H 6700 3967 50  0000 C CNN
+F 1 "LMC6482" H 6700 3876 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 6700 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 6700 3600 50  0001 C CNN
+	2    6700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B89ACC9
+P 4650 3400
+F 0 "R1" V 4443 3400 50  0000 C CNN
+F 1 "1k" V 4534 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 4580 3400 50  0001 C CNN
+F 3 "~" H 4650 3400 50  0001 C CNN
+	1    4650 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B89AE49
+P 4800 3950
+F 0 "R2" H 4870 3996 50  0000 L CNN
+F 1 "1M" H 4870 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 4730 3950 50  0001 C CNN
+F 3 "~" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5B89AED5
+P 5350 2850
+F 0 "R3" V 5143 2850 50  0000 C CNN
+F 1 "47k" V 5234 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 5280 2850 50  0001 C CNN
+F 3 "~" H 5350 2850 50  0001 C CNN
+	1    5350 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B89AF57
+P 5350 2500
+F 0 "C1" V 5098 2500 50  0000 C CNN
+F 1 "1u" V 5189 2500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 5388 2350 50  0001 C CNN
+F 3 "~" H 5350 2500 50  0001 C CNN
+	1    5350 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5B89B00B
+P 4350 3950
+F 0 "D1" V 4388 3833 50  0000 R CNN
+F 1 "LED" V 4297 3833 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4350 3950 50  0001 C CNN
+F 3 "~" H 4350 3950 50  0001 C CNN
+	1    4350 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5B89B0EB
+P 6150 3700
+F 0 "RV1" H 6080 3746 50  0000 R CNN
+F 1 "R_POT" H 6080 3655 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Horizontal" H 6150 3700 50  0001 C CNN
+F 3 "~" H 6150 3700 50  0001 C CNN
+	1    6150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 5B89B390
+P 6150 3550
+F 0 "#PWR07" H 6150 3400 50  0001 C CNN
+F 1 "+3.3V" H 6165 3723 50  0000 C CNN
+F 2 "" H 6150 3550 50  0001 C CNN
+F 3 "" H 6150 3550 50  0001 C CNN
+	1    6150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5B89B459
+P 4250 2350
+F 0 "J1" H 4170 2025 50  0000 C CNN
+F 1 "Conn_01x03" H 4170 2116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4250 2350 50  0001 C CNN
+F 3 "~" H 4250 2350 50  0001 C CNN
+	1    4250 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5B89B4E7
+P 4450 2250
+F 0 "#PWR01" H 4450 2100 50  0001 C CNN
+F 1 "+3.3V" H 4465 2423 50  0000 C CNN
+F 2 "" H 4450 2250 50  0001 C CNN
+F 3 "" H 4450 2250 50  0001 C CNN
+	1    4450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5B89B56A
+P 4450 2450
+F 0 "#PWR02" H 4450 2200 50  0001 C CNN
+F 1 "GND" H 4455 2277 50  0000 C CNN
+F 2 "" H 4450 2450 50  0001 C CNN
+F 3 "" H 4450 2450 50  0001 C CNN
+	1    4450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5B89B5AE
+P 4500 3400
+F 0 "#PWR03" H 4500 3150 50  0001 C CNN
+F 1 "GND" H 4505 3227 50  0000 C CNN
+F 2 "" H 4500 3400 50  0001 C CNN
+F 3 "" H 4500 3400 50  0001 C CNN
+	1    4500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5B89B5F2
+P 6150 3850
+F 0 "#PWR08" H 6150 3600 50  0001 C CNN
+F 1 "GND" H 6155 3677 50  0000 C CNN
+F 2 "" H 6150 3850 50  0001 C CNN
+F 3 "" H 6150 3850 50  0001 C CNN
+	1    6150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B89B636
+P 4600 4250
+F 0 "#PWR04" H 4600 4000 50  0001 C CNN
+F 1 "GND" H 4605 4077 50  0000 C CNN
+F 2 "" H 4600 4250 50  0001 C CNN
+F 3 "" H 4600 4250 50  0001 C CNN
+	1    4600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2350 4700 2350
+Wire Wire Line
+	5200 2500 5050 2500
+Wire Wire Line
+	5050 2500 5050 2850
+Wire Wire Line
+	5050 2850 5200 2850
+Wire Wire Line
+	5050 2850 5050 3400
+Wire Wire Line
+	5050 3400 5100 3400
+Connection ~ 5050 2850
+Wire Wire Line
+	4800 3400 5050 3400
+Connection ~ 5050 3400
+Wire Wire Line
+	4350 3600 4350 3800
+Wire Wire Line
+	4350 3600 4800 3600
+Wire Wire Line
+	4350 4100 4350 4250
+Wire Wire Line
+	4350 4250 4600 4250
+Wire Wire Line
+	4600 4250 4800 4250
+Wire Wire Line
+	4800 4250 4800 4100
+Connection ~ 4600 4250
+Wire Wire Line
+	4800 3800 4800 3600
+Connection ~ 4800 3600
+Wire Wire Line
+	4800 3600 5100 3600
+Wire Wire Line
+	6400 3700 6300 3700
+Wire Wire Line
+	7000 3600 7150 3600
+Wire Wire Line
+	5500 2500 5700 2500
+Wire Wire Line
+	5700 2500 5700 2850
+Wire Wire Line
+	5500 2850 5700 2850
+Wire Wire Line
+	5700 3500 6400 3500
+Connection ~ 5700 2850
+$Comp
+L Amplifier_Operational:LMC6482 U1
+U 3 1 5B89C6EB
+P 5200 3500
+F 0 "U1" H 5012 3454 50  0000 R CNN
+F 1 "LMC6482" H 5012 3545 50  0000 R CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5200 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 5200 3500 50  0001 C CNN
+	3    5200 3500
+	-1   0    0    1   
+$EndComp
+Connection ~ 5700 3500
+Wire Wire Line
+	5700 2850 5700 3500
+$Comp
+L Amplifier_Operational:LMC6482 U2
+U 3 1 5B89D1BD
+P 6700 3600
+F 0 "U2" H 6658 3646 50  0000 L CNN
+F 1 "LMC6482" H 6658 3555 50  0000 L CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 6700 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 6700 3600 50  0001 C CNN
+	3    6700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5B89D254
+P 5300 3200
+F 0 "#PWR05" H 5300 2950 50  0001 C CNN
+F 1 "GND" H 5305 3027 50  0000 C CNN
+F 2 "" H 5300 3200 50  0001 C CNN
+F 3 "" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5B89D2B4
+P 6600 3900
+F 0 "#PWR010" H 6600 3650 50  0001 C CNN
+F 1 "GND" H 6605 3727 50  0000 C CNN
+F 2 "" H 6600 3900 50  0001 C CNN
+F 3 "" H 6600 3900 50  0001 C CNN
+	1    6600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR09
+U 1 1 5B89D313
+P 6600 3300
+F 0 "#PWR09" H 6600 3150 50  0001 C CNN
+F 1 "+3.3V" H 6615 3473 50  0000 C CNN
+F 2 "" H 6600 3300 50  0001 C CNN
+F 3 "" H 6600 3300 50  0001 C CNN
+	1    6600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5B89D35D
+P 5300 3800
+F 0 "#PWR06" H 5300 3650 50  0001 C CNN
+F 1 "+3.3V" H 5315 3973 50  0000 C CNN
+F 2 "" H 5300 3800 50  0001 C CNN
+F 3 "" H 5300 3800 50  0001 C CNN
+	1    5300 3800
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
