@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP R_POT_TRIM_0
+D Trim-Potentiometer
+K resistor variable trimpot trimmer
+F ~
+$ENDCMP
+#
+#End Doc Library

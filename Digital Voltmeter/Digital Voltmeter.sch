@@ -1,0 +1,515 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Digital Voltmeter"
+Date ""
+Rev ""
+Comp ""
+Comment1 "9V battery input"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:CAP C2
+U 1 1 5BC8A8DB
+P 2150 2300
+F 0 "C2" H 2328 2346 50  0000 L CNN
+F 1 "2.2u" H 2328 2255 50  0000 L CNN
+F 2 "" H 2150 2300 50  0001 C CNN
+F 3 "" H 2150 2300 50  0001 C CNN
+	1    2150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Digital~Voltmeter:ICL7660S U2
+U 1 1 5BC8ADD6
+P 3400 2300
+F 0 "U2" H 3200 2650 50  0000 L CNN
+F 1 "ICL7660S" H 3250 2400 50  0000 L CNN
+F 2 "" H 3400 2300 50  0001 C CNN
+F 3 "" H 3400 2300 50  0001 C CNN
+	1    3400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C3
+U 1 1 5BC8AE87
+P 2800 2300
+F 0 "C3" H 2978 2346 50  0000 L CNN
+F 1 "10u" H 2978 2255 50  0000 L CNN
+F 2 "" H 2800 2300 50  0001 C CNN
+F 3 "" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C4
+U 1 1 5BC8B0FC
+P 4000 2550
+F 0 "C4" H 4178 2596 50  0000 L CNN
+F 1 "10u" H 4178 2505 50  0000 L CNN
+F 2 "" H 4000 2550 50  0001 C CNN
+F 3 "" H 4000 2550 50  0001 C CNN
+	1    4000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1900 3400 1900
+Wire Wire Line
+	3050 2050 2800 2050
+Wire Wire Line
+	2800 2550 3050 2550
+Wire Wire Line
+	1550 1900 1150 1900
+Text Label 1350 1900 0    50   ~ 0
+Vin=9V
+Text Label 2150 1900 0    50   ~ 0
+5V
+Text Label 3750 2300 0    50   ~ 0
+-5V
+Wire Wire Line
+	3400 2700 3400 2800
+Wire Wire Line
+	3400 2800 4000 2800
+Wire Wire Line
+	2150 2550 2150 2800
+Wire Wire Line
+	2150 2800 3400 2800
+Connection ~ 3400 2800
+Wire Wire Line
+	1850 2200 1850 2800
+Wire Wire Line
+	1850 2800 2150 2800
+Connection ~ 2150 2800
+Wire Wire Line
+	1550 2800 1850 2800
+Connection ~ 1850 2800
+$Comp
+L power:GND #PWR0101
+U 1 1 5BC8C313
+P 4000 2800
+F 0 "#PWR0101" H 4000 2550 50  0001 C CNN
+F 1 "GND" H 4005 2627 50  0000 C CNN
+F 2 "" H 4000 2800 50  0001 C CNN
+F 3 "" H 4000 2800 50  0001 C CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2000 2150 1900
+Wire Wire Line
+	2150 2050 2150 2000
+Connection ~ 2150 2000
+Connection ~ 2150 1900
+$Comp
+L Regulator_Linear:L78L05_SO8 U1
+U 1 1 5BC80C7F
+P 1850 1900
+F 0 "U1" H 1850 2142 50  0000 C CNN
+F 1 "L78L05_SO8" H 1850 2051 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 2100 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 2050 1900 50  0001 C CNN
+	1    1850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2050 1550 2000
+$Comp
+L pspice:CAP C1
+U 1 1 5BC8A873
+P 1550 2300
+F 0 "C1" H 1728 2346 50  0000 L CNN
+F 1 "470u" H 1728 2255 50  0000 L CNN
+F 2 "" H 1550 2300 50  0001 C CNN
+F 3 "" H 1550 2300 50  0001 C CNN
+	1    1550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2550 1550 2800
+Connection ~ 1550 1900
+Connection ~ 1550 2000
+Wire Wire Line
+	1550 2000 1550 1900
+Wire Wire Line
+	3750 2300 4000 2300
+Connection ~ 4000 2800
+$Comp
+L pspice:CAP C6
+U 1 1 5BCD0F5B
+P 5850 4950
+F 0 "C6" H 6028 4996 50  0000 L CNN
+F 1 "100nF" H 6028 4905 50  0000 L CNN
+F 2 "" H 5850 4950 50  0001 C CNN
+F 3 "" H 5850 4950 50  0001 C CNN
+	1    5850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C5
+U 1 1 5BCD0FDD
+P 5850 3650
+F 0 "C5" H 6028 3696 50  0000 L CNN
+F 1 "10nF" H 6028 3605 50  0000 L CNN
+F 2 "" H 5850 3650 50  0001 C CNN
+F 3 "" H 5850 3650 50  0001 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C9
+U 1 1 5BCD115A
+P 6100 5400
+F 0 "C9" V 6000 5300 50  0000 C CNN
+F 1 "100pF" V 6000 5600 50  0000 C CNN
+F 2 "" H 6100 5400 50  0001 C CNN
+F 3 "" H 6100 5400 50  0001 C CNN
+	1    6100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:CAP C8
+U 1 1 5BCD11BD
+P 6100 4500
+F 0 "C8" V 6150 4400 50  0000 C CNN
+F 1 "220nF" V 6150 4700 50  0000 C CNN
+F 2 "" H 6100 4500 50  0001 C CNN
+F 3 "" H 6100 4500 50  0001 C CNN
+	1    6100 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:CAP C7
+U 1 1 5BCD1234
+P 6100 4100
+F 0 "C7" V 6150 4000 50  0000 C CNN
+F 1 "47nF" V 6150 4250 50  0000 C CNN
+F 2 "" H 6100 4100 50  0001 C CNN
+F 3 "" H 6100 4100 50  0001 C CNN
+	1    6100 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 4700 6350 4700
+Wire Wire Line
+	5850 5200 6350 5200
+Wire Wire Line
+	5850 5400 5850 5600
+Wire Wire Line
+	5850 5750 6350 5750
+Wire Wire Line
+	5850 4100 5850 4300
+Wire Wire Line
+	5850 3900 6350 3900
+Wire Wire Line
+	5850 3400 6350 3400
+Wire Wire Line
+	6350 3100 5850 3100
+Wire Wire Line
+	5850 3100 5850 3250
+Connection ~ 5850 3400
+Wire Wire Line
+	6350 3250 5850 3250
+Connection ~ 5850 3250
+Wire Wire Line
+	5850 3250 5850 3400
+$Comp
+L Device:R R4
+U 1 1 5BCD26AE
+P 6100 5600
+F 0 "R4" V 6150 5450 50  0000 C CNN
+F 1 "180k" V 6150 5800 50  0000 C CNN
+F 2 "" V 6030 5600 50  0001 C CNN
+F 3 "~" H 6100 5600 50  0001 C CNN
+	1    6100 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BCD2752
+P 6100 4300
+F 0 "R3" V 6150 4150 50  0000 C CNN
+F 1 "470k" V 6150 4500 50  0000 C CNN
+F 2 "" V 6030 4300 50  0001 C CNN
+F 3 "~" H 6100 4300 50  0001 C CNN
+	1    6100 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BCD27C0
+P 5500 3650
+F 0 "R2" H 5570 3696 50  0000 L CNN
+F 1 "12k" H 5570 3605 50  0000 L CNN
+F 2 "" V 5430 3650 50  0001 C CNN
+F 3 "~" H 5500 3650 50  0001 C CNN
+	1    5500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BCD2851
+P 5150 3900
+F 0 "R1" V 4943 3900 50  0000 C CNN
+F 1 "1M" V 5034 3900 50  0000 C CNN
+F 2 "" V 5080 3900 50  0001 C CNN
+F 3 "~" H 5150 3900 50  0001 C CNN
+	1    5150 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 4300 5850 4300
+Connection ~ 5850 4300
+Wire Wire Line
+	5850 4300 5850 4500
+Wire Wire Line
+	6250 4300 6350 4300
+Wire Wire Line
+	6250 5600 6350 5600
+Wire Wire Line
+	5950 5600 5850 5600
+Connection ~ 5850 5600
+Wire Wire Line
+	5850 5600 5850 5750
+Wire Wire Line
+	5500 3500 5500 3400
+Wire Wire Line
+	5500 3400 5850 3400
+Wire Wire Line
+	5500 3800 5500 3900
+Wire Wire Line
+	5500 3900 5850 3900
+Connection ~ 5850 3900
+Wire Wire Line
+	5500 3900 5300 3900
+Connection ~ 5500 3900
+Wire Wire Line
+	5000 3900 4850 3900
+Wire Wire Line
+	4850 3400 5500 3400
+Connection ~ 5500 3400
+$Comp
+L Device:R R5
+U 1 1 5BCD72C5
+P 6500 2750
+F 0 "R5" V 6293 2750 50  0000 C CNN
+F 1 "22k" V 6384 2750 50  0000 C CNN
+F 2 "" V 6430 2750 50  0001 C CNN
+F 3 "~" H 6500 2750 50  0001 C CNN
+	1    6500 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM_0 RV1
+U 1 1 5BCDC864
+P 5850 2950
+F 0 "RV1" H 5780 2996 50  0000 R CNN
+F 1 "20k" H 5780 2905 50  0000 R CNN
+F 2 "" H 5850 2950 50  0001 C CNN
+F 3 "~" H 5850 2950 50  0001 C CNN
+	1    5850 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 3100
+Wire Wire Line
+	6000 2950 6350 2950
+Wire Wire Line
+	5850 2800 5850 2750
+Wire Wire Line
+	5850 2750 6350 2750
+Wire Wire Line
+	6650 2750 6800 2750
+$Comp
+L Digital~Voltmeter:MAN6960 U4
+U 1 1 5BCE4A3D
+P 7850 2600
+F 0 "U4" V 8415 2835 50  0000 C CNN
+F 1 "MAN6960" V 8324 2835 50  0000 C CNN
+F 2 "" H 7800 2600 50  0001 C CNN
+F 3 "" H 7800 2600 50  0001 C CNN
+	1    7850 2600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7250 5150 7600 5150
+Wire Wire Line
+	7250 5250 7600 5250
+Wire Wire Line
+	7250 5350 7600 5350
+Wire Wire Line
+	7250 5450 7600 5450
+Wire Wire Line
+	7250 5550 7600 5550
+Wire Wire Line
+	7250 5650 7600 5650
+Wire Wire Line
+	7250 5750 7600 5750
+Wire Wire Line
+	7250 4950 7600 4950
+Wire Wire Line
+	7250 4350 7600 4350
+Wire Wire Line
+	7250 4450 7600 4450
+Wire Wire Line
+	7250 4550 7600 4550
+Wire Wire Line
+	7250 4650 7600 4650
+Wire Wire Line
+	7250 4750 7600 4750
+Wire Wire Line
+	7250 4850 7600 4850
+Wire Wire Line
+	7250 3300 7600 3300
+Wire Wire Line
+	7250 3400 7600 3400
+Wire Wire Line
+	7250 3500 7600 3500
+Wire Wire Line
+	7250 3600 7600 3600
+Wire Wire Line
+	7250 3700 7600 3700
+Wire Wire Line
+	7250 3800 7600 3800
+Wire Wire Line
+	7250 3900 7600 3900
+Wire Wire Line
+	7250 2950 7400 2950
+Wire Wire Line
+	7400 2950 7400 2250
+Wire Wire Line
+	7400 2250 7600 2250
+Wire Wire Line
+	7250 3050 7500 3050
+Wire Wire Line
+	7500 3050 7500 2750
+Wire Wire Line
+	7500 2650 7600 2650
+Wire Wire Line
+	7600 2750 7500 2750
+Connection ~ 7500 2750
+Wire Wire Line
+	7500 2750 7500 2650
+$Comp
+L Digital~Voltmeter:ICL7107 U3
+U 1 1 5BD07790
+P 6800 3400
+F 0 "U3" H 6800 4228 50  0000 C CNN
+F 1 "ICL7107" H 6800 4137 50  0000 C CNN
+F 2 "" H 6800 3400 50  0001 C CNN
+F 3 "" H 6800 3400 50  0001 C CNN
+	1    6800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Digital~Voltmeter:MAN6960 U5
+U 1 1 5BD08FBF
+P 7850 3650
+F 0 "U5" V 8415 3885 50  0000 C CNN
+F 1 "MAN6960" V 8324 3885 50  0000 C CNN
+F 2 "" H 7800 3650 50  0001 C CNN
+F 3 "" H 7800 3650 50  0001 C CNN
+	1    7850 3650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5BD0A81F
+P 7400 4000
+F 0 "R6" V 7500 3850 50  0000 C CNN
+F 1 "560" V 7500 4000 50  0000 C CNN
+F 2 "" V 7330 4000 50  0001 C CNN
+F 3 "~" H 7400 4000 50  0001 C CNN
+	1    7400 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Digital~Voltmeter:MAN6960 U7
+U 1 1 5BD0C170
+P 7850 5500
+F 0 "U7" V 8415 5735 50  0000 C CNN
+F 1 "MAN6960" V 8324 5735 50  0000 C CNN
+F 2 "" H 7800 5500 50  0001 C CNN
+F 3 "" H 7800 5500 50  0001 C CNN
+	1    7850 5500
+	0    1    -1   0   
+$EndComp
+$Comp
+L Digital~Voltmeter:MAN6960 U6
+U 1 1 5BD10FF0
+P 7850 4700
+F 0 "U6" V 8415 4935 50  0000 C CNN
+F 1 "MAN6960" V 8324 4935 50  0000 C CNN
+F 2 "" H 7800 4700 50  0001 C CNN
+F 3 "" H 7800 4700 50  0001 C CNN
+	1    7850 4700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7550 4000 7600 4000
+Wire Wire Line
+	7550 4000 7550 4050
+Connection ~ 7550 4000
+$Comp
+L power:GND #PWR0102
+U 1 1 5BD17463
+P 7550 4050
+F 0 "#PWR0102" H 7550 3800 50  0001 C CNN
+F 1 "GND" H 7555 3877 50  0000 C CNN
+F 2 "" H 7550 4050 50  0001 C CNN
+F 3 "" H 7550 4050 50  0001 C CNN
+	1    7550 4050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7600 2850
+NoConn ~ 7600 5050
+NoConn ~ 7600 5850
+NoConn ~ 7600 2950
+NoConn ~ 7600 2550
+NoConn ~ 7600 2450
+NoConn ~ 7600 2350
+Text Label 4850 3900 0    50   ~ 0
+Vin+
+Text Label 4850 3400 0    50   ~ 0
+Vin-
+Wire Wire Line
+	6800 2750 6800 1900
+Wire Wire Line
+	6800 1900 8850 1900
+Wire Wire Line
+	8850 1900 8850 2600
+Wire Wire Line
+	8850 5500 8600 5500
+Connection ~ 6800 2750
+Wire Wire Line
+	8600 4700 8850 4700
+Connection ~ 8850 4700
+Wire Wire Line
+	8850 4700 8850 5500
+Wire Wire Line
+	8600 3650 8850 3650
+Connection ~ 8850 3650
+Wire Wire Line
+	8850 3650 8850 4700
+Wire Wire Line
+	8600 2600 8850 2600
+Connection ~ 8850 2600
+Wire Wire Line
+	8850 2600 8850 3650
+Wire Wire Line
+	3400 1900 6800 1900
+Connection ~ 3400 1900
+Connection ~ 6800 1900
+Wire Wire Line
+	6800 6000 4600 6000
+Wire Wire Line
+	4600 6000 4600 2300
+Wire Wire Line
+	4600 2300 4000 2300
+Connection ~ 4000 2300
+Wire Wire Line
+	6800 6000 6800 5950
+$EndSCHEMATC
