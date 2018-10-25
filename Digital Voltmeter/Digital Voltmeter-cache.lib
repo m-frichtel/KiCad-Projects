@@ -38,11 +38,11 @@ X 3 3 0 150 50 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Digital Voltmeter:ICL7107
+# Digital_Voltmeter:ICL7107
 #
-DEF Digital Voltmeter:ICL7107 U 0 40 Y Y 1 F N
+DEF Digital_Voltmeter:ICL7107 U 0 40 Y Y 1 F N
 F0 "U" 250 650 50 H V C CNN
-F1 "Digital Voltmeter:ICL7107" 0 -850 50 V V C CNN
+F1 "Digital_Voltmeter:ICL7107" 0 -850 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -90,11 +90,11 @@ X D2 9 450 -1250 100 L 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# Digital Voltmeter:ICL7660S
+# Digital_Voltmeter:ICL7660S
 #
-DEF Digital Voltmeter:ICL7660S U 0 40 Y Y 1 F N
+DEF Digital_Voltmeter:ICL7660S U 0 40 Y Y 1 F N
 F0 "U" 200 350 50 H V C CNN
-F1 "Digital Voltmeter:ICL7660S" 250 -350 50 H V C CNN
+F1 "Digital_Voltmeter:ICL7660S" 250 -350 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -107,11 +107,11 @@ X V+ 8 0 400 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Digital Voltmeter:MAN6960
+# Digital_Voltmeter:MAN6960
 #
-DEF Digital Voltmeter:MAN6960 U 0 40 Y Y 1 F N
+DEF Digital_Voltmeter:MAN6960 U 0 40 Y Y 1 F N
 F0 "U" -300 750 50 H V C CNN
-F1 "Digital Voltmeter:MAN6960" 250 750 50 H V C CNN
+F1 "Digital_Voltmeter:MAN6960" 250 750 50 H V C CNN
 F2 "" -50 0 50 H I C CNN
 F3 "" -50 0 50 H I C CNN
 DRAW

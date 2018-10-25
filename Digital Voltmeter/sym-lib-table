@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name "Digital Voltmeter")(type Legacy)(uri "/Users/mikaela/Documents/Digital Voltmeter/Digital Voltmeter.lib")(options "")(descr ""))
+  (lib (name Digital_Voltmeter)(type Legacy)(uri "${KIPRJMOD}/Digital Voltmeter.lib")(options "")(descr ""))
 )
