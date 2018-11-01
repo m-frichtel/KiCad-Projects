@@ -509,27 +509,4 @@ Wire Wire Line
 	7550 4000 7550 5050
 Wire Wire Line
 	7550 5050 7600 5050
-$Comp
-L Connector:Conn_01x02_Female J?
-U 1 1 5BDA935F
-P 800 2250
-F 0 "J?" H 700 2400 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 350 2050 50  0000 L CNN
-F 2 "" H 800 2250 50  0001 C CNN
-F 3 "~" H 800 2250 50  0001 C CNN
-	1    800  2250
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 2250 1150 2250
-Wire Wire Line
-	1150 2250 1150 1900
-Wire Wire Line
-	1000 2350 1150 2350
-Wire Wire Line
-	1150 2350 1150 2800
-Text GLabel 800  2250 0    50   Input ~ 0
-Vin=9V
-Text GLabel 800  2350 0    50   Input ~ 0
-GND
 $EndSCHEMATC

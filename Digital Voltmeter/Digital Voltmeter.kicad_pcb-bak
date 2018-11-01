@@ -1473,7 +1473,7 @@
     )
   )
 
-  (gr_line (start 104 75.6) (end 104 136.8425) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 104 75.6) (end 104 136.7155) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 174.75 75.6) (end 104 75.6) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 174.75 136.7155) (end 174.75 75.6) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 104 136.7155) (end 174.75 136.7155) (layer Edge.Cuts) (width 0.2))
