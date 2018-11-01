@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name Digital_Voltmeter_Parts)(type KiCad)(uri ${KIPRJMOD}/Digital_Voltmeter_Parts.pretty)(options "")(descr ""))
   (lib (name ICL7660SIBAZT)(type Legacy)(uri ${KIPRJMOD}/ICL7660SIBAZT/ICL7660SIBAZT.mod)(options "")(descr ""))
+  (lib (name logos)(type KiCad)(uri /Users/mikaela/Downloads/logos)(options "")(descr ""))
 )

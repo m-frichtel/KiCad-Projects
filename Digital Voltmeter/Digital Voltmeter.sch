@@ -63,8 +63,8 @@ Wire Wire Line
 Wire Wire Line
 	2800 2550 3050 2550
 Wire Wire Line
-	1550 1900 1150 1900
-Text Label 1150 1900 0    50   ~ 0
+	1550 1900 1200 1900
+Text Label 1200 1900 0    50   ~ 0
 Vin=9V
 Text Label 2150 1900 0    50   ~ 0
 5V
@@ -497,11 +497,6 @@ Text GLabel 6800 6000 2    50   Input ~ 0
 -5V
 Text GLabel 8850 2600 2    50   Input ~ 0
 5V
-Wire Wire Line
-	1550 2800 1150 2800
-Connection ~ 1550 2800
-Text Label 1150 2800 0    50   ~ 0
-GND
 Text GLabel 6800 2750 2    50   Input ~ 0
 5V
 Connection ~ 7250 4000
@@ -509,4 +504,37 @@ Wire Wire Line
 	7550 4000 7550 5050
 Wire Wire Line
 	7550 5050 7600 5050
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5BDA9824
+P 4650 3650
+F 0 "J1" H 4622 3530 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4622 3621 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4650 3650 50  0001 C CNN
+F 3 "~" H 4650 3650 50  0001 C CNN
+	1    4650 3650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4850 3550 4850 3400
+Wire Wire Line
+	4850 3650 4850 3900
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5BDB28C4
+P 1000 2250
+F 0 "J2" H 1106 2428 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1106 2337 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1000 2250 50  0001 C CNN
+F 3 "~" H 1000 2250 50  0001 C CNN
+	1    1000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2350 1200 2800
+Wire Wire Line
+	1200 2800 1550 2800
+Connection ~ 1550 2800
+Wire Wire Line
+	1200 2250 1200 1900
 $EndSCHEMATC
