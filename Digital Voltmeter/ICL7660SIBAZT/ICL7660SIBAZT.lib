@@ -1,0 +1,34 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ICL7660SIBAZT
+#
+DEF ICL7660SIBAZT U 0 40 Y Y 1 L N
+F0 "U" -212 661 50 H V L BNN
+F1 "ICL7660SIBAZT" -193 -892 50 H V L BNN
+F2 "SOIC127P600X175-8N" 0 0 50 H I L BNN
+F3 "Renesas Electronics" 0 0 50 H I L BNN
+F4 "ICL7660 Series 1.5 - 12 Vin 45 mA 10-35 kHz CMOS Voltage Converter - SOIC-8" 0 0 50 H I L BNN
+F5 "https://www.digikey.com/product-detail/en/renesas-electronics-america-inc/ICL7660SIBAZT/ICL7660SIBAZTCT-ND/1033970?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F6 "SOIC-8 Intersil" 0 0 50 H I L BNN
+F7 "ICL7660SIBAZT" 0 0 50 H I L BNN
+F8 "ICL7660SIBAZTCT-ND" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 16 -500 500 -500 -700 N
+P 2 0 0 16 -500 -700 500 -700 N
+P 2 0 0 16 500 -700 500 500 N
+P 2 0 0 16 500 500 -500 500 N
+X V+ 8 -700 300 200 R 40 40 0 0 W 
+X CAP- 4 -700 100 200 R 40 40 0 0 P 
+X CAP+ 2 -700 0 200 R 40 40 0 0 P 
+X LV 6 -700 -100 200 R 40 40 0 0 I 
+X NC 1 -700 -200 200 R 40 40 0 0 N 
+X OSC 7 -700 -300 200 R 40 40 0 0 I 
+X GND 3 -700 -500 200 R 40 40 0 0 P 
+X VOUT 5 700 300 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library
